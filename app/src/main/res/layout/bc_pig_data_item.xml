@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/ngay_hoa_don"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tong_tl"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="right"
+        />
+
+    <TextView
+        android:id="@+id/tong_xc"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="right"
+        />
+
+    <TextView
+        android:id="@+id/tong_chet"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="right"
+        />
+
+    <TextView
+        android:id="@+id/doanh_thu"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="right"
+        />
+</LinearLayout>

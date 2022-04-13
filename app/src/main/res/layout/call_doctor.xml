@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cd_background"
+    >
+
+    <ImageButton
+        android:id="@+id/call_doctor_button_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pigsl Connect"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/bold_green"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/call_doctor_button_back" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BS Nguyễn Điều Trị"
+        android:textSize="27sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView60"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/doctor" />
+
+    <ImageView
+        android:id="@+id/button11"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/cd_custom_phone_button"
+        android:src="@drawable/cd_phone"
+        android:text="Button"
+        android:scaleType="fitXY"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/cd_custom_phone_button"
+        app:layout_constraintBottom_toBottomOf="@+id/button11"
+        app:layout_constraintEnd_toStartOf="@+id/button11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button11"
+        app:srcCompat="@drawable/cd_phone_hangup" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/cd_custom_phone_button"
+        app:layout_constraintBottom_toBottomOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button11"
+        app:layout_constraintTop_toTopOf="@+id/button11"
+        app:srcCompat="@drawable/cd_video_cam" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangKi"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/background_dang_ki"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+        <ImageButton
+            android:id="@+id/dk_button_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_left"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="10dp"
+            />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký tài khoản"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:background="@drawable/custom_button"
+        android:drawableLeft="@drawable/custom_icon_facebook"
+        android:paddingLeft="10dp"
+        android:text="continue with facebook"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="continue with google"
+        android:textSize="@dimen/text_size"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/custom_icon_google"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Hoặc đăng ký bằng Email"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:background="@drawable/custom_edittext"
+        android:hint="Tên của bạn"
+        android:inputType="textPersonName"
+        android:drawableRight="@drawable/tick"
+        />
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:background="@drawable/custom_edittext"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:drawableRight="@drawable/tick"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:background="@drawable/custom_edittext"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:hint="Mật khẩu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.12"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/eyes"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dieu_khoan"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:paddingLeft="15dp"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="Đăng Ký"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/white"
+        />
+  </LinearLayout>
+
+</ScrollView>

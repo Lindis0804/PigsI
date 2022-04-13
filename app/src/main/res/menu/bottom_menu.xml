@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/bot_nav_trang_chu"
+    android:title="Trang chủ"
+    android:icon="@drawable/bottombar_trang_chu"
+    />
+    <item
+        android:id="@+id/bot_nav_theo_doi"
+        android:title="Báo cáo"
+        android:icon="@drawable/bottombar_theo_doi"
+        />
+    <item
+        android:id="@+id/bot_nav_nhac_nho"
+        android:title="Nhắc nhở"
+        android:icon="@drawable/bottombar_nhac_nho"
+        />
+    <item
+        android:id="@+id/bot_nav_ket_noi"
+        android:title="Kết nối"
+        android:icon="@drawable/bottombar_ket_noi"
+        />
+    <item
+        android:id="@+id/bot_nav_toi"
+        android:title="Tôi"
+        android:icon="@drawable/bottombar_toi"
+        />
+</menu>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:id="@+id/kn_drawerLayout"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="210dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/kn_header" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:srcCompat="@drawable/name_app" />
+
+            <ImageButton
+                android:id="@+id/kn_button_hambugur"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                app:srcCompat="@drawable/arrow"
+                android:tint="@color/white"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                app:cardCornerRadius="25dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/alice" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="92dp"
+                android:text="Xin chào, Nghĩa"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/kn_button_hambugur" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="20dp"
+                android:text="Tìm kiếm những chủ đề liên quan đến chăn nuôi và
+nhận hỗ trợ từ cộng đồng hay các bác sĩ thú y"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                <EditText
+                    android:id="@+id/kn_editText_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/ncc_search_icon"
+                    android:hint="Bạn đang tìm kiếm gì?"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Các bác sỹ thú y hàng đầu"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/kn_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView11"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/kn_item_textView_baiVietMoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="4dp"
+                android:text="Các bài viết mới nhất"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/kn_recyclerView" />
+
+
+            <ListView
+                android:id="@+id/kn_item_listView_baiVietMoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/kn_item_textView_baiVietMoi" />
+
+            <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--        android:id="@+id/end_layout"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="60dp"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@id/kn_item_listView_baiVietMoi"-->
+            <!--   >-->
+
+            <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+<com.google.android.material.navigation.NavigationView
+    android:id="@+id/kn_navigationView"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    app:menu="@menu/kn_menu"
+    app:headerLayout="@layout/kn_header_layout"
+    />
+
+</androidx.drawerlayout.widget.DrawerLayout>

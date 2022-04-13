@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Báo cáo theo tuần"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chon_tuan"
+        android:textSize="18sp"
+        android:layout_marginTop="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17sp"
+        android:text="KẾT QUẢ PHỐI TUẦN 07"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView78">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="7sp"
+                android:text="Số phát hiện không bầu"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="7sp"
+                android:text="3"
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="7sp"
+                android:text="Trung bình ngày phối - không bầu"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="7sp"
+                android:paddingLeft="5sp"
+                android:text="22"
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="7sp"
+                android:text="Số phát hiện sẩy thai"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="7sp"
+                android:paddingLeft="5sp"
+                android:text="11"
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="7sp"
+                android:text="Trung bình ngày phối - sẩy thai"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="7sp"
+                android:paddingLeft="5sp"
+                android:text="56"
+                android:textColor="@color/white" />
+        </TableRow>
+    </TableLayout>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"></com.github.mikephil.charting.charts.BarChart>
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số phôi đẻ tăng 74 phôi so với tuần 06"
+        android:textColor="@color/white"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp"
+        android:paddingRight="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barChart" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3sp"
+        android:background="@drawable/custom_button"
+        android:paddingLeft="4sp"
+        android:paddingRight="4sp"
+        android:text="+4.45%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/textView79"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toEndOf="@+id/textView79"
+        app:layout_constraintTop_toTopOf="@+id/textView79"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

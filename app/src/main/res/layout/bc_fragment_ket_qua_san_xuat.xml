@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="@color/light_black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/textView87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá lợn xuất chuồng"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/button_back"
+        app:layout_constraintTop_toBottomOf="@+id/button_back" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textPersonName"
+        android:hint="500.000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView87"
+        app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
+    <TextView
+        android:id="@+id/textView88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng trọng lượng bán"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:hint="0"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName6"
+        app:layout_constraintStart_toStartOf="@+id/textView88"
+        app:layout_constraintTop_toBottomOf="@+id/textView88" />
+
+    <TextView
+        android:id="@+id/textView89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Tổng số xuất chuồng"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName7"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:inputType="textPersonName"
+        android:hint="0"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName7"
+        app:layout_constraintStart_toStartOf="@+id/textView89"
+        app:layout_constraintTop_toBottomOf="@+id/textView89" />
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng số chết"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName8"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:hint="0"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName8"
+        app:layout_constraintStart_toStartOf="@+id/textView90"
+        app:layout_constraintTop_toBottomOf="@+id/textView90" />
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày hóa đơn"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName9"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:hint="03/02/2021"
+        android:drawableRight="@drawable/icon_calendar2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName9"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName9"
+        app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bc_custom_button"
+        android:backgroundTint="@color/green"
+        android:text="Lưu"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button14"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:orientation="horizontal"
+    android:layout_marginRight="10dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        >
+
+        <TableLayout
+            android:id="@+id/tableLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:padding="5dp"
+                    android:text="Ngày hóa đơn"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:padding="5dp"
+                    android:text="Tổng TL"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:padding="5dp"
+                    android:text="Tổng XC"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:padding="5dp"
+                    android:text="Tổng chết"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:padding="5dp"
+                    android:text="Doanh thu"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</HorizontalScrollView>
+
+
+    <!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button14">-->
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <-->
+<!--        -->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </ScrollView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_gray"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray"
+            >
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.75" />
+
+            <ImageView
+                android:id="@+id/imageView_food"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:scaleType="centerInside"
+                android:layout_marginLeft="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/g1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/food_1680" />
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thức ăn heo nái - 8042"
+                android:textColor="@color/light_black"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/g1"
+                app:layout_constraintTop_toTopOf="@+id/imageView_food" />
+
+            <TextView
+                android:id="@+id/textView_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="220.000 VNĐ/Bao"
+                android:textSize="15sp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView_food"
+                app:layout_constraintTop_toBottomOf="@+id/textView_name" />
+
+            <ImageButton
+                android:id="@+id/button_tim"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="3dp"
+                android:padding="3sp"
+                android:background="@drawable/custom_cargill_like_button"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_food"
+                app:layout_constraintEnd_toStartOf="@+id/g2"
+                app:layout_constraintTop_toBottomOf="@+id/textView_price"
+                app:srcCompat="@drawable/icon_heart_xml" />
+
+            <ImageButton
+                android:id="@+id/button_cart"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:padding="3dp"
+                android:background="@drawable/custom_cargill_cart_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/g2"
+                app:layout_constraintTop_toTopOf="@+id/button_tim"
+                app:srcCompat="@drawable/icon_cart" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/nav_mua_thuc_an"
+    android:title="Giao dịch mua thức ăn"
+    android:icon="@drawable/td_food"
+    />
+    <item
+        android:id="@+id/nav_qldt"
+        android:title="Quản lý dòng tiền"
+        android:icon="@drawable/td_money"
+        />
+    <item
+        android:id="@+id/nav_sl_heo_tiem_vaccine"
+        android:title="Số tượng heo tiêm vaccine"
+        android:icon="@drawable/td_pig"
+        />
+    <item
+        android:id="@+id/nav_bao_cao_theo_tuan"
+        android:title="Báo cáo theo tuần"
+        android:icon="@drawable/td_report"
+        />
+</menu>

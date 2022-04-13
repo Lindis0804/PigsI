@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">New Pig</string>
+    <string name="dieu_khoan">Tôi đã đọc và đồng ý các <font color="#289f52">Điều khoản</font></string>
+    <string name="dang_ki_ngay"><font color="#289f52">Đăng kí ngay</font></string>
+    <string name="title_activity_trang_chu">TrangChu</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="comment">Chào bạn,\n Tôi đã hiểu vấn đề của bạn và sẽ đưa ra một số phương pháp phòng chống và chữa bệnh viêm màng phổi ở heo, bạn có thể tham khảo nhé.\n
+    - Chọn mua lợn ở những cơ sở an toàn dịch bệnh, có nguồn gốc rõ ràng, nuôi cách ly trước khi nhập đàn\n
+        -Chuồng trại chăn nuôi phải đảm bảo cách ly với các khu vực khác, có hàng rào ngăn không cho súc vật, các loài gặm nhấm.\n
+        -Ở các điểm ra vào trại phải hố sát trùng, tiêu độc.\n
+        -Tránh sự tiếp xúc trực tiếp giữa đàn lợn ốm và đàn lợn khỏe mạnh.\n
+        -Định kì kiểm tra vi khuẩn, xét nghiệm vi khuẩn.\n
+        -Định kì phun tiêu độc khử trùng chuồng trại, dụng cụ chăn nuôi bằng thuốc sát trùng. Phân, nước tiểu, chất thải trong chăn nuôi phải được thu gom xử lý bằng các phương pháp thích hợp.\n
+        -Kiểm soát tốt các nguồn nguyên vật liệu khi đưa vào trang trại.\n
+        -Sử dụng ứng dụng Pigsl\n
+        -Chăm sóc nuôi dưỡng tốt đàn lợn nhằm nâng cao sức đề kháng cho đàn lợn, tạo môi trường thuận lợi để đàn lợn sinh trưởng phát triển.
+    </string>
+    <string name="tot"><font color="#0431b4">76%\n</font> <font color="#ffffff">Tốt</font></string>
+    <string name="trung_binh"><font color="#0174df">16%\n</font> <font color="#ffffff">Trung Bình</font></string>
+    <string name="yeu"><font color="#00bfff">06%\n</font> <font color="#ffffff">Yếu</font></string>
+    <string name="khac"><font color="#81f7f3">02%\n</font> <font color="#ffffff">Khác</font></string>
+    <string name="chon_tuan"><font color="#E6E6E6">Chọn tuần:</font><font color="#289f52"> 07</font></string>
+    <string-array name="options">
+        <item>None</item>
+        <item>Mỗi 5 phút</item>
+        <item>Mỗi 10 phút</item>
+        <item>Mỗi 15 phút</item>
+    </string-array>
+    <string-array name="cac_loai_chi_phi">
+        <item>Chi phí BHTN</item>
+        <item>Chi phí BHXH</item>
+        <item>Chi phí BHYT</item>
+        <item>Chi phí công đoàn</item>
+        <item>Chi phí điện</item>
+        <item>Chi phí KHTSCĐ</item>
+        <item>Chi phí KHTSCĐ</item>
+        <item>Chi phí kiểm dịch thú y</item>
+        <item>Chi phí lượng</item>
+        <item>Chi phí môi trường</item>
+        <item>Chi phí nhiên liệu</item>
+    </string-array>
+    <string-array name="giong">
+        <item>Đực</item>
+        <item>Cái</item>
+    </string-array>
+</resources>

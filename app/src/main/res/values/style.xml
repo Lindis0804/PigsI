@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="CalendarViewCustom" parent="Theme.AppCompat">
+        <item name="colorAccent">#00ffff</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+</resources>

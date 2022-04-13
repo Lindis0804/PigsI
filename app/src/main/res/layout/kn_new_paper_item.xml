@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kn_npi_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="9dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="25dp"
+            >
+            <ImageView
+                android:id="@+id/kn_npi_imageView_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:scaleType="centerCrop"
+
+                app:srcCompat="@drawable/alice" />
+        </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/kn_npi_textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="bottom"
+                android:text="Alice"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/cardView_avatar"
+                app:layout_constraintTop_toTopOf="@+id/cardView_avatar" />
+
+            <TextView
+                android:id="@+id/kn_npi_textView_time_access"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 phút trước"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView_avatar"
+                app:layout_constraintStart_toStartOf="@+id/kn_npi_textView_name" />
+
+            <ImageButton
+                android:id="@+id/kn_item_imageButton_mark"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="7dp"
+                android:background="@null"
+                android:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/kn_icon_price" />
+
+            <TextView
+                android:id="@+id/kn_npi_textView_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="7dp"
+                android:text="Nhờ hỗ trợ về bệnh viêm màng phổi ở heo"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView_avatar" />
+
+            <TextView
+                android:id="@+id/kn_npi_textView_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="7dp"
+                android:text="Hôm nay mình đăng bài nhờ mọi người tư vấn giúp mình cách chữa đàn heo bị viêm..."
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kn_npi_textView_title" />
+
+            <ImageButton
+                android:id="@+id/kn_item_imageButton_like"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kn_npi_textView_content"
+                app:srcCompat="@drawable/kn_icon_like" />
+
+            <TextView
+                android:id="@+id/kn_npi_textView_num_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="104"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/kn_item_imageButton_like"
+                app:layout_constraintStart_toEndOf="@+id/kn_item_imageButton_like"
+                app:layout_constraintTop_toTopOf="@+id/kn_item_imageButton_like" />
+
+            <ImageButton
+                android:id="@+id/kn_npi_imageButton_comment"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="28dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/kn_item_imageButton_like"
+                app:layout_constraintStart_toEndOf="@+id/kn_npi_textView_num_like"
+                app:layout_constraintTop_toTopOf="@+id/kn_item_imageButton_like"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/kn_icon_comment" />
+
+            <TextView
+                android:id="@+id/kn_npi_textView_num_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="92"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/kn_npi_imageButton_comment"
+                app:layout_constraintStart_toEndOf="@+id/kn_npi_imageButton_comment"
+                app:layout_constraintTop_toTopOf="@+id/kn_npi_imageButton_comment" />
+
+            <TextView
+                android:id="@+id/kn_npi_textView_isOld"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thành viên mới"
+                android:layout_marginLeft="7dp"
+                android:background="#cef6d8"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/kn_npi_textView_name"
+                app:layout_constraintStart_toEndOf="@+id/kn_npi_textView_name"
+                app:layout_constraintTop_toTopOf="@+id/kn_npi_textView_name" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
